@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'CeraPro';
+  src: url('../fonts/CeraPro-Regular.woff2') format('woff2'),
+       url('../fonts/CeraPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CeraPro';
+  src: url('../fonts/CeraPro-Bold.woff2') format('woff2'),
+       url('../fonts/CeraPro-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+   font-family: 'CeraPro', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'CeraPro', sans-serif;
+  font-size: 15px;                  
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.categories li {
+  padding: 8px 0;
+  color: #555;
+  cursor: pointer;
+  font-weight: 400; 
+}
+
+.categories li.active {
+  color: #3a6b35;
+  font-weight: 700; 
+}
+
+.sale-banner img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-family: 'CeraPro', sans-serif;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 15px; 
+  font-family: 'CeraPro', sans-serif;
+}
+
+.tabs a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-family: 'CeraPro', sans-serif;
+}
+
+.tabs a.active {
+  color: #3a6b35;
+  border-bottom: 2px solid #3a6b35;
+  padding-bottom: 5px;
+  font-weight: 700; 
+}
+
+.sort label {
+  font-family: 'CeraPro', sans-serif;
+  font-weight: 500;
+}
+
+.sort select {
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'CeraPro', sans-serif;
+  font-size: 14px;
+}
+
+.plants-section {
+  text-align: center;
+}
+
+.plant-card {
+  display: inline-block;
+  width: 250px;
+  margin: 15px;
+  vertical-align: top;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.plant-card h3 {
+  font-size: 15px;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.plant-card .price {
+  font-weight: 700;
+  color: #3a6b35;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'CeraPro', sans-serif;
+}
+
+.pagination a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #555;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'CeraPro', sans-serif;
+}
+
+.pagination a.active {
+  background-color: #3a6b35;
+  color: #fff;
+  border-color: #3a6b35;
+  font-weight: 700;
+}
