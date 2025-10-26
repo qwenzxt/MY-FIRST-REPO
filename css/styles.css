@@ -1,0 +1,143 @@
+@font-face { font-family: "CeraPro"; src: url("fonts/CeraPro-Bold.woff") format("woff"); 
+    font-weight: 700; 
+    font-style: normal; 
+    font-display: swap; 
+}
+@font-face { font-family: "CeraPro"; src: url("fonts/CeraPro-Medium.woff") format("woff"); 
+    font-weight: 500; 
+    font-style: normal; 
+    font-display: swap; 
+}
+* { box-sizing: border-box; }
+:root{
+  --w: 1200px;
+  --font: "Cera Pro", "CeraPro", "Inter", system-ui, -apple-system, Arial, sans-serif;
+  --text: #3d3d3d;
+  --muted:#727272;
+  --green:#46a358;
+}
+html,body{margin:0;padding:0;color:var(--text);font-family:var(--font);}
+
+.wrap{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:40px 0;
+  background:#fff;
+}
+
+.greenshop-footer{
+  width:var(--w);
+  height:610px;
+  display:flex;
+  flex-direction:column;
+}
+.features{
+  height:250px;
+  display:flex;
+  gap:32px;
+  padding:24px 24px 16px 24px;
+  align-items:flex-start;
+}
+
+.feature{
+  width:calc((var(--w) - 24px*2 - 32px*3)/4);
+  display:flex; flex-direction:column; gap:10px;
+  padding-right:24px;
+  border-right:1px solid #e5e5e5;
+}
+.feature:nth-child(3){ padding-right:0; }
+.feature__icon{
+  width:80px;height:80px;
+  background-repeat:no-repeat;background-size:contain;background-position:center;
+}
+.icon--garden-care{    background-image:url("../img/Picture.png"); }
+.icon--plant-renovation{background-image:url("../img/Picture (1).png"); }
+.icon--watering{       background-image:url("../img/Picture (2).png"); }
+
+.feature__title{ margin:6px 0 0; font-size:18px; font-weight:700; }
+.feature__text{ margin:0; color:var(--muted); line-height:1.6; }
+.newsletter{
+  width:calc((var(--w) - 24px*2 - 32px*3)/4);
+  display:flex; flex-direction:column; gap:12px;
+}
+.newsletter__title{ margin:4px 0 0; font-size:18px; font-weight:700; }
+.newsletter__row{
+  display:flex; gap:10px;
+}
+.newsletter__input{
+  flex:1; height:40px; border:1px solid #e5e5e5; border-radius:4px;
+  padding:0 12px; outline:none;
+}
+.newsletter__btn{
+  height:40px; padding:0 18px; border:0; border-radius:4px;
+  font-weight:700; color:#fff; background:var(--green); cursor:pointer;
+}
+.newsletter__hint{ margin:0; color:var(--muted); line-height:1.6; }
+.info-strip{
+  height:88px;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 24px;
+  background:linear-gradient(90deg,#dfeee4 0%, #86d593 50%, #62c07b 100%);
+  border-radius:2px;
+}
+.info-strip__item{
+  display:flex; align-items:center; gap:12px;
+}
+
+.logo-mark{
+  width:34.3px; height:34.3px; flex:0 0 34.3px;
+  background:url("../img/Vector.png") center/contain no-repeat;
+}
+.logo-text{
+  font-weight:800; letter-spacing:0.3px; color:#2d4739;
+}
+
+.info-icon{
+  width:20px; height:20px; flex:0 0 20px;
+  background-repeat:no-repeat; background-position:center; background-size:contain;
+  opacity:.9;
+}
+.icon--pin{   background-image:url("../img/Icon.png"); }
+.icon--mail{  background-image:url("../img/Icon (1).png"); }
+.icon--phone{ background-image:url("../img/Icon (2).png"); }
+.footer-grid{
+  height:236px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:32px;
+  padding:24px;
+}
+.col h4{
+  margin:0 0 12px; font-size:18px; font-weight:800;
+}
+.col a{
+  display:block; color:var(--muted); text-decoration:none;
+  margin:8px 0; font-size:14px;
+}
+.col a:hover{ color:#2c2c2c; }
+.col--social .socials{ display:flex; gap:12px; margin:6px 0 14px; }
+
+.social{
+  width:30px; height:30px; border-radius:6px; display:inline-block;
+  background:#f1f1f1 center/30px 30px no-repeat;
+  border:1px solid #e7e7e7;
+}
+.social--fb{   background-image:url("../img/Facebook.png"); }
+.social--inst{ background-image:url("../img/Instagram.png"); }
+.social--tw{   background-image:url("../img/Twitter.png"); }
+.social--ln{   background-image:url("../img/Linkidin.png"); }
+.social--yt{   background-image:url("../img/Youtube.png"); }
+
+.accept-title{ margin:8px 0 10px; }
+
+.payments{
+  width:224px; height:26px; 
+  background:url("../img/image 16.png") center/contain no-repeat;
+  mix-blend-mode:multiply;
+}
+copyright, .copyright{ display:block; text-align:center; color:#999; }
+.copyright{
+  width:257px; height:30px; line-height:30px; margin:0 auto 0;
+  font-size:12px;
+}
